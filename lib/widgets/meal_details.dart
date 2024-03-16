@@ -9,7 +9,6 @@ class MealDetailsScreen extends ConsumerWidget {
     });
   final Meal meal;
 
-
   @override
   Widget build(BuildContext context,WidgetRef ref) {
     final favoriteMeals = ref.watch(favoriteMealsProvider);
@@ -37,7 +36,7 @@ class MealDetailsScreen extends ConsumerWidget {
                       ).animate(animation),
                     child: child,);
                 } ,
-                duration: Duration(milliseconds: 300),
+                duration: const Duration(milliseconds: 300),
                 child:Icon(isFavorite?Icons.star:Icons.star_border,key: ValueKey(isFavorite),))
           ),
         ],

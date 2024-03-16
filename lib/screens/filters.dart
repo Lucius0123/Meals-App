@@ -10,7 +10,7 @@ class FiltersScreen extends ConsumerWidget {
     final activeFilters = ref.watch(filterProvider);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Your Filters'),
+        title: const Text('Your Filters'),
       ),
       body: Column(
         children: [
@@ -29,7 +29,7 @@ class FiltersScreen extends ConsumerWidget {
                 color: Theme.of(context).colorScheme.onBackground
             ),),
             activeColor: Theme.of(context).colorScheme.tertiary,
-            contentPadding: EdgeInsets.only(left: 34,right: 22),
+            contentPadding: const EdgeInsets.only(left: 34,right: 22),
           ),
           SwitchListTile(
             value: activeFilters[Filter.lactoseFree]!,
@@ -46,7 +46,7 @@ class FiltersScreen extends ConsumerWidget {
                 color: Theme.of(context).colorScheme.onBackground
             ),),
             activeColor: Theme.of(context).colorScheme.tertiary,
-            contentPadding: EdgeInsets.only(left: 34,right: 22),
+            contentPadding: const EdgeInsets.only(left: 34,right: 22),
           ),
           SwitchListTile(
             value: activeFilters[Filter.vegetarian]!,
@@ -63,7 +63,7 @@ class FiltersScreen extends ConsumerWidget {
                 color: Theme.of(context).colorScheme.onBackground
             ),),
             activeColor: Theme.of(context).colorScheme.tertiary,
-            contentPadding: EdgeInsets.only(left: 34,right: 22),
+            contentPadding: const EdgeInsets.only(left: 34,right: 22),
           ),
           SwitchListTile(
             value: activeFilters[Filter.vegan]!,
@@ -80,7 +80,7 @@ class FiltersScreen extends ConsumerWidget {
                 color: Theme.of(context).colorScheme.onBackground
             ),),
             activeColor: Theme.of(context).colorScheme.tertiary,
-            contentPadding: EdgeInsets.only(left: 34,right: 22),
+            contentPadding: const EdgeInsets.only(left: 34,right: 22),
           ),
         ],
       )
